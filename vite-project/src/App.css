@@ -1,0 +1,32 @@
+.clock {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+.origin {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.origin * {
+  position: absolute;
+  height: auto;
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+.hour {
+  transform: translateX(1rem) rotate(240deg);
+}
+
+.minute {
+  transform: translate(0.5rem) rotate(240deg);
+}
+
+.second {
+  transform: translate(3px, 9px) rotate(240deg);
+}
